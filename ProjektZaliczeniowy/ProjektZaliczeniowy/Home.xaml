@@ -1,0 +1,25 @@
+﻿<Page x:Class="ProjektZaliczeniowy.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektZaliczeniowy"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="Dom">
+
+    <Grid>
+        <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500"/>
+        <Button Content="Laptop 💻" HorizontalAlignment="Left" Margin="21,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35"/>
+        <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="21,237,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13"><Run Text="Dodaj"/><Run Text=" do magazynu"/></TextBlock>
+        <Button Content="Komputer 💻" HorizontalAlignment="Left" Margin="185,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35"/>
+        <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="185,237,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="185,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" Text="Sprzedaj"/>
+        <Button Content="Komputer 💻" HorizontalAlignment="Left" Margin="345,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35"/>
+        <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="345,237,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="345,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13" Text="Zarezerwuj"/>
+        <Image HorizontalAlignment="Left" Height="130" Margin="21,17,0,0" VerticalAlignment="Top" Width="130" Source="icon.png"/>
+        <Rectangle Fill="#FF19D3DA" HorizontalAlignment="Left" Height="12" Stroke="Black" VerticalAlignment="Top" Width="500"/>
+    </Grid>
+</Page>

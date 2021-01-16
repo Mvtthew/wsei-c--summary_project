@@ -1,0 +1,17 @@
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\bin\Debug\ProjektZaliczeniowy.exe.config
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\bin\Debug\ProjektZaliczeniowy.exe
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\bin\Debug\ProjektZaliczeniowy.pdb
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy.csprojAssemblyReference.cache
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\MainWindow.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Home.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\App.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy_MarkupCompile.cache
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy_MarkupCompile.lref
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\MainWindow.baml
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Home.baml
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy.g.resources
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy.Properties.Resources.resources
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy.csproj.GenerateResource.cache
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy.csproj.CoreCompileInputs.cache
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy.exe
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy.pdb
