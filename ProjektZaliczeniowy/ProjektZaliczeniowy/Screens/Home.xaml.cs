@@ -43,6 +43,30 @@ namespace ProjektZaliczeniowy
             var addClient = new AddClient();
             NavigationService.Navigate(addClient);
         }
+        
+        private void GoToClientList(object sender, RoutedEventArgs e)
+        {
+            var listClient = new ClientsList();
+            NavigationService.Navigate(listClient);
+        }
+        
+        private void GoToModelsList(object sender, RoutedEventArgs e)
+        {
+            var modelsList = new ModelsList();
+            NavigationService.Navigate(modelsList);
+        }
+        
+        private void GoToComputersList(object sender, RoutedEventArgs e)
+        {
+            var computersList = new ComputersList();
+            NavigationService.Navigate(computersList);
+        }
+        
+        private void GoToSalesList(object sender, RoutedEventArgs e)
+        {
+            var salesList = new SalesList();
+            NavigationService.Navigate(salesList);
+        }
 
         private void GoToReservationAdd(object sender, RoutedEventArgs e)
         {

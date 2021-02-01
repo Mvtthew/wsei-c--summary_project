@@ -1,0 +1,32 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektZaliczeniowy.Screens"
+      xmlns:ProjektZaliczeniowy="clr-namespace:ProjektZaliczeniowy" x:Class="ProjektZaliczeniowy.Screens.ComputersList"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="ComputersList">
+
+    <Page.Resources>
+        <CollectionViewSource x:Key="clientsViewSource" d:DesignSource="{d:DesignInstance {x:Type ProjektZaliczeniowy:Clients}, CreateList=True}"/>
+        <CollectionViewSource x:Key="computersViewSource" d:DesignSource="{d:DesignInstance {x:Type ProjektZaliczeniowy:Computers}, CreateList=True}"/>
+    </Page.Resources>
+
+    <Grid DataContext="{StaticResource clientsViewSource}">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500"/>
+        <DataGrid x:Name="computersDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource computersViewSource}}" Margin="10" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="computerAmountColumn" Binding="{Binding ComputerAmount}" Header="Computer Amount" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="computerIDColumn" Binding="{Binding ComputerID}" Header="Computer ID" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="computerModelIdColumn" Binding="{Binding ComputerModelId}" Header="Computer Model Id" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="computerNameColumn" Binding="{Binding ComputerName}" Header="Computer Name" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="computerPriceColumn" Binding="{Binding ComputerPrice}" Header="Computer Price" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="computerReservationPriceColumn" Binding="{Binding ComputerReservationPrice}" Header="Computer Reservation Price" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="computerTypeColumn" Binding="{Binding ComputerType}" Header="Computer Type" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Page>

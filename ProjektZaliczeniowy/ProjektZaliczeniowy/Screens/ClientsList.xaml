@@ -1,0 +1,30 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektZaliczeniowy.Screens"
+      xmlns:ProjektZaliczeniowy="clr-namespace:ProjektZaliczeniowy" x:Class="ProjektZaliczeniowy.Screens.ClientsList"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="ClientsList">
+
+    <Page.Resources>
+        <CollectionViewSource x:Key="clientsViewSource" d:DesignSource="{d:DesignInstance {x:Type ProjektZaliczeniowy:Clients}, CreateList=True}"/>
+    </Page.Resources>
+
+    <Grid DataContext="{StaticResource clientsViewSource}">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500"/>
+
+        <DataGrid x:Name="clientsDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="18,18,19,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="clientEmailColumn" Binding="{Binding ClientEmail}" Header="Client Email" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="clientGenderColumn" Binding="{Binding ClientGender}" Header="Client Gender" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="clientIDColumn" Binding="{Binding ClientID}" Header="Client ID" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="clientNameColumn" Binding="{Binding ClientName}" Header="Client Name" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="clientPhoneColumn" Binding="{Binding ClientPhone}" Header="Client Phone" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Page>

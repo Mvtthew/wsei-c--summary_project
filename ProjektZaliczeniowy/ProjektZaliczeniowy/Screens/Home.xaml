@@ -37,5 +37,9 @@
         <TextBlock HorizontalAlignment="Left" Margin="102,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="1" Width="4" Background="White" TextAlignment="Center"><Run Background="White" Text="Kosz"/></TextBlock>
         <Button Content="ZAPŁAĆ $€" HorizontalAlignment="Left" Margin="134,299,0,0" VerticalAlignment="Top" Width="111" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Click="GoToReservationPay" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="134,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.ColumnSpan="2"><Run Text="Zapłać za "/><Run Text="sprzedaż"/></TextBlock>
+        <Button Content="📜" HorizontalAlignment="Left" Margin="122,106,0,0" VerticalAlignment="Top" Width="36" Background="#FF686D76" FontSize="18" Height="36" IsCancel="True" Click="GoToClientList" Foreground="White" Grid.Column="1" />
+        <Button Content="📜" HorizontalAlignment="Left" Margin="122,43,0,0" VerticalAlignment="Top" Width="36" Background="#FF686D76" FontSize="18" Height="36" IsCancel="True" Click="GoToModelsList" Foreground="White" Grid.Column="1" />
+        <Button Content="📜" HorizontalAlignment="Left" Margin="122,165,0,0" VerticalAlignment="Top" Width="36" Background="#FF686D76" FontSize="18" Height="36" IsCancel="True" Click="GoToComputersList" Foreground="White" Grid.Column="1" />
+        <Button Content="📜" HorizontalAlignment="Left" Margin="253,258,0,0" VerticalAlignment="Top" Width="65" Background="#FF686D76" FontSize="18" Height="36" IsCancel="True" Click="GoToSalesList" Foreground="White" Grid.Column="1" />
     </Grid>
 </Page>

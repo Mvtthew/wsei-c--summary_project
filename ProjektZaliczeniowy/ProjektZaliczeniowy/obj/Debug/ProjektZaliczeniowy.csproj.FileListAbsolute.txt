@@ -31,3 +31,11 @@ C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Sc
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\AddReservation.baml
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\PayReservation.g.cs
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\PayReservation.baml
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\ClientsList.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\ClientsList.baml
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\SalesList.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\ModelsList.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\ComputersList.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\SalesList.baml
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\ModelsList.baml
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\ComputersList.baml
