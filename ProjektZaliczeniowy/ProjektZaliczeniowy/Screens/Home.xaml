@@ -35,5 +35,7 @@
         </Label>
         <Image HorizontalAlignment="Left" Height="4" Margin="102,84,0,0" VerticalAlignment="Top" Width="4" Source="icon.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="102,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="1" Width="4" Background="White" TextAlignment="Center"><Run Background="White" Text="Kosz"/></TextBlock>
+        <Button Content="ZAPŁAĆ $€" HorizontalAlignment="Left" Margin="134,299,0,0" VerticalAlignment="Top" Width="111" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Click="GoToReservationPay" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="134,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zapłać za rezerwacje" Grid.ColumnSpan="2"/>
     </Grid>
 </Page>

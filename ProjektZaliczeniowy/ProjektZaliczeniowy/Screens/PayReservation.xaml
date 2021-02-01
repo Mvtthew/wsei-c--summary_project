@@ -1,0 +1,21 @@
+﻿<Page x:Class="ProjektZaliczeniowy.Screens.PayReservation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektZaliczeniowy.Screens"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="PayReservation">
+
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500"/>
+        <TextBlock HorizontalAlignment="Left" Margin="23,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Text="Zapłać za "/><Run Text="rezerwacje"/><Run Text=" "/><Run Text="$€"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="23,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Rezerwacja"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="reservationSelect" HorizontalAlignment="Left" Margin="24,85,0,0" VerticalAlignment="Top" Width="451" Height="18" SelectionChanged="reservationSelect_SelectionChanged"/>
+        <Button Content="Zapłać za rezerwacje" HorizontalAlignment="Left" Margin="24,164,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+        <TextBox x:Name="reservationPriceInput" HorizontalAlignment="Left" Margin="24,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="451" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Cena rezerwacji"/>
+    </Grid>
+</Page>
