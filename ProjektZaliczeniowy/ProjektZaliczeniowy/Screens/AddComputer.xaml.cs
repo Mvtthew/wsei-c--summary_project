@@ -55,7 +55,54 @@ namespace ProjektZaliczeniowy.Screens
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            errorText.Text = "";
             var db = new computerEntities();
+
+            if (computerNameInput.Text == "")
+            {
+                errorText.Text = "Wprowadź nazwę komputera.";
+                return;
+            }
+
+            if (computerTypeSelect.SelectedValue == null)
+            {
+                errorText.Text = "Wybierz typ komputera.";
+                return;
+            }
+
+            if (computerModelSelect.SelectedValue == null)
+            {
+                errorText.Text = "Wybierz model komputera.";
+                return;
+            }
+
+            try
+            {
+                var computerReservationPriceTest = decimal.Parse(computerReservationPriceInput.Text);
+            }
+            catch
+            {
+                errorText.Text = "Wprowadź poprawną cenę rezerwacji komptera.";
+                return;
+            }
+
+            try
+            {
+                var computerPriceTest = decimal.Parse(computerPriceInput.Text);
+            } catch
+            {
+                errorText.Text = "Wprowadź poprawną cenę komptera.";
+                return;
+            }
+            
+            try
+            {
+                var computerAmountTest = int.Parse(computerAmountInput.Text);
+            } catch
+            {
+                errorText.Text = "Wprowadź poprawną ilość komputerów.";
+                return;
+            }
 
             var computerModelId = int.Parse(computerModelSelect.SelectedValue.ToString());
             var computerType = computerTypeSelect.SelectedValue.ToString();
