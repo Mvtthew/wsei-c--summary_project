@@ -23,6 +23,88 @@ namespace ProjektZaliczeniowy.Screens
         public AddReservation()
         {
             InitializeComponent();
+            fillClientsSelect();
+            fillComputersSelect();
+        }
+
+        private void fillClientsSelect()
+        {
+            var db = new computerEntities();
+
+            var clients = db.Clients.ToList();
+
+            clientSelect.Items.Clear();
+
+            clientSelect.DisplayMemberPath = "Text";
+            clientSelect.SelectedValuePath = "Value";
+
+            foreach (var client in clients)
+            {
+                clientSelect.Items.Add(
+                    new 
+                    { 
+                        Text = $"{client.ClientName} [{client.ClientGender}] ({client.ClientEmail} | {client.ClientPhone})", 
+                        Value = client.ClientID 
+                    }
+                );
+            }
+        }
+
+        private void fillComputersSelect()
+        {
+            var db = new computerEntities();
+
+            var computers = db.Computers.ToList();
+
+            computerSelect.Items.Clear();
+
+            computerSelect.DisplayMemberPath = "Text";
+            computerSelect.SelectedValuePath = "Value";
+
+            foreach (var computer in computers)
+            {
+                computerSelect.Items.Add(
+                    new 
+                    { 
+                        Text = $"{computer.ComputerName} [{computer.ComputerType}] ({computer.ComputerPrice} PLN)", 
+                        Value = computer.ComputerID 
+                    }
+                );
+            }
+        }
+
+        private void calculatePrice()
+        {
+            var db = new computerEntities();
+
+            var computers = db.Computers.ToList();
+            var computer = computers.First(c => c.ComputerID == int.Parse(computerSelect.SelectedValue.ToString()));
+
+            if (computer != null)
+            {
+                reservationPriceInput.Text = computer.ComputerPrice.ToString();
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var db = new computerEntities();
+
+            var newReservation = new Reservations()
+            {
+                ClientID = int.Parse(clientSelect.SelectedValue.ToString()),
+                ComputerID = int.Parse(computerSelect.SelectedValue.ToString()),
+                PriceToPay = decimal.Parse(reservationPriceInput.Text),
+            };
+
+            db.Reservations.Add(newReservation);
+
+            db.SaveChanges();
+        }
+
+        private void computerSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            calculatePrice();
         }
     }
 }

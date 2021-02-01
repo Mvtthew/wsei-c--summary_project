@@ -18,7 +18,7 @@
         <ComboBox x:Name="computerModelSelect" HorizontalAlignment="Left" Margin="24,179,0,0" VerticalAlignment="Top" Width="451" Height="18"/>
         <ComboBox x:Name="computerTypeSelect" HorizontalAlignment="Left" Margin="24,139,0,0" VerticalAlignment="Top" Width="451" Height="18" SelectionChanged="computerTypeSelect_SelectionChanged"/>
         <TextBox x:Name="computerPriceInput" HorizontalAlignment="Left" Height="18" Margin="23,219,0,0" TextWrapping="Wrap" Text="0,00" VerticalAlignment="Top" Width="452" />
-        <TextBlock HorizontalAlignment="Left" Margin="24,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Cena "/><Run Text="komputera"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="24,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Cena"/><Run Text=" rezerwacji"/><Run Text=" "/><Run Text="komputera"/></TextBlock>
         <Button Content="Dodaj komputer" HorizontalAlignment="Left" Margin="23,267,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
 
     </Grid>

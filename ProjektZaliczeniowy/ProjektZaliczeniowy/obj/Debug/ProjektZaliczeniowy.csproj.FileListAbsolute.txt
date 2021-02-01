@@ -28,3 +28,4 @@ C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Sc
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\AddClient.g.cs
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\AddClient.baml
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\AddReservation.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\AddReservation.baml

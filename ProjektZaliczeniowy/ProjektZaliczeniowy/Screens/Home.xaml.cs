@@ -43,5 +43,11 @@ namespace ProjektZaliczeniowy
             var addClient = new AddClient();
             NavigationService.Navigate(addClient);
         }
+
+        private void GoToReservationAdd(object sender, RoutedEventArgs e)
+        {
+            var addReservation = new AddReservation();
+            NavigationService.Navigate(addReservation);
+        }
     }
 }
