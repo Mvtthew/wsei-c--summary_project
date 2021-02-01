@@ -17,7 +17,7 @@ namespace ProjektZaliczeniowy
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Clients()
         {
-            this.Reservations = new HashSet<Reservations>();
+            this.Sales = new HashSet<Sales>();
         }
     
         public int ClientID { get; set; }
@@ -27,6 +27,6 @@ namespace ProjektZaliczeniowy
         public string ClientGender { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Reservations> Reservations { get; set; }
+        public virtual ICollection<Sales> Sales { get; set; }
     }
 }

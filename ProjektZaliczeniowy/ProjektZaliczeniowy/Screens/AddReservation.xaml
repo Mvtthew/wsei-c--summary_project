@@ -10,14 +10,16 @@
 
     <Grid>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Text="Dodaj "/><Run Text="rezerwacje"/><Run Text=" "/><Run Text="💻👤"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="23,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Text="Dodaj "/><Run Text="sprzedaż "/><Run Text="💻👤"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="23,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Klient"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <ComboBox x:Name="clientSelect" HorizontalAlignment="Left" Margin="24,85,0,0" VerticalAlignment="Top" Width="451" Height="18"/>
-        <Button Content="Dodaj rezerwacje" HorizontalAlignment="Left" Margin="23,200,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+        <Button Content="Dodaj sprzedaż" HorizontalAlignment="Left" Margin="24,241,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="23,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Komputer"/>
         <ComboBox x:Name="computerSelect" HorizontalAlignment="Left" Margin="24,123,0,0" VerticalAlignment="Top" Width="451" Height="18" SelectionChanged="computerSelect_SelectionChanged"/>
         <TextBox x:Name="reservationPriceInput" HorizontalAlignment="Left" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="451" IsEnabled="False"/>
         <TextBlock HorizontalAlignment="Left" Margin="24,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Cena rezerwacji"/>
+        <TextBox x:Name="summaryPriceInput" HorizontalAlignment="Left" Margin="23,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="451" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="23,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Cena "/><Run Text="sumaryczna"/><LineBreak/><Run/></TextBlock>
     </Grid>
 </Page>

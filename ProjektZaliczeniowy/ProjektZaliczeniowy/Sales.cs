@@ -12,7 +12,7 @@ namespace ProjektZaliczeniowy
     using System;
     using System.Collections.Generic;
     
-    public partial class Reservations
+    public partial class Sales
     {
         public int ReservationID { get; set; }
         public int ClientID { get; set; }

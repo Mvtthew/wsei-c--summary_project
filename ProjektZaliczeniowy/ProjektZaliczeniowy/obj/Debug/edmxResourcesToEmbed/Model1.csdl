@@ -9,7 +9,7 @@
     <Property Name="ClientEmail" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ClientPhone" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ClientGender" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Reservations" Relationship="Self.FK__Reservati__Clien__1940BAED" FromRole="Clients" ToRole="Reservations" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK__Sales__ClientID__24B26D99" FromRole="Clients" ToRole="Sales" />
   </EntityType>
   <EntityType Name="Computers">
     <Key>
@@ -20,8 +20,10 @@
     <Property Name="ComputerType" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ComputerName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ComputerPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
-    <NavigationProperty Name="Models" Relationship="Self.FK__Computers__Compu__147C05D0" FromRole="Computers" ToRole="Models" />
-    <NavigationProperty Name="Reservations" Relationship="Self.FK__Reservati__Compu__1A34DF26" FromRole="Computers" ToRole="Reservations" />
+    <Property Name="ComputerReservationPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ComputerAmount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Models" Relationship="Self.FK__Computers__Compu__1FEDB87C" FromRole="Computers" ToRole="Models" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK__Sales__ComputerI__25A691D2" FromRole="Computers" ToRole="Sales" />
   </EntityType>
   <EntityType Name="Models">
     <Key>
@@ -29,10 +31,9 @@
     </Key>
     <Property Name="ModelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ModelName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="ModelType" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Computers" Relationship="Self.FK__Computers__Compu__147C05D0" FromRole="Models" ToRole="Computers" />
+    <NavigationProperty Name="Computers" Relationship="Self.FK__Computers__Compu__1FEDB87C" FromRole="Models" ToRole="Computers" />
   </EntityType>
-  <EntityType Name="Reservations">
+  <EntityType Name="Sales">
     <Key>
       <PropertyRef Name="ReservationID" />
     </Key>
@@ -41,22 +42,22 @@
     <Property Name="ComputerID" Type="Int32" Nullable="false" />
     <Property Name="PriceToPay" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="Payed" Type="Boolean" />
-    <NavigationProperty Name="Clients" Relationship="Self.FK__Reservati__Clien__1940BAED" FromRole="Reservations" ToRole="Clients" />
-    <NavigationProperty Name="Computers" Relationship="Self.FK__Reservati__Compu__1A34DF26" FromRole="Reservations" ToRole="Computers" />
+    <NavigationProperty Name="Clients" Relationship="Self.FK__Sales__ClientID__24B26D99" FromRole="Sales" ToRole="Clients" />
+    <NavigationProperty Name="Computers" Relationship="Self.FK__Sales__ComputerI__25A691D2" FromRole="Sales" ToRole="Computers" />
   </EntityType>
-  <Association Name="FK__Reservati__Clien__1940BAED">
+  <Association Name="FK__Sales__ClientID__24B26D99">
     <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
-    <End Role="Reservations" Type="Self.Reservations" Multiplicity="*" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Clients">
         <PropertyRef Name="ClientID" />
       </Principal>
-      <Dependent Role="Reservations">
+      <Dependent Role="Sales">
         <PropertyRef Name="ClientID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Computers__Compu__147C05D0">
+  <Association Name="FK__Computers__Compu__1FEDB87C">
     <End Role="Models" Type="Self.Models" Multiplicity="1" />
     <End Role="Computers" Type="Self.Computers" Multiplicity="*" />
     <ReferentialConstraint>
@@ -68,14 +69,14 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Reservati__Compu__1A34DF26">
+  <Association Name="FK__Sales__ComputerI__25A691D2">
     <End Role="Computers" Type="Self.Computers" Multiplicity="1" />
-    <End Role="Reservations" Type="Self.Reservations" Multiplicity="*" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Computers">
         <PropertyRef Name="ComputerID" />
       </Principal>
-      <Dependent Role="Reservations">
+      <Dependent Role="Sales">
         <PropertyRef Name="ComputerID" />
       </Dependent>
     </ReferentialConstraint>
@@ -84,18 +85,18 @@
     <EntitySet Name="Clients" EntityType="Self.Clients" />
     <EntitySet Name="Computers" EntityType="Self.Computers" />
     <EntitySet Name="Models" EntityType="Self.Models" />
-    <EntitySet Name="Reservations" EntityType="Self.Reservations" />
-    <AssociationSet Name="FK__Reservati__Clien__1940BAED" Association="Self.FK__Reservati__Clien__1940BAED">
+    <EntitySet Name="Sales" EntityType="Self.Sales" />
+    <AssociationSet Name="FK__Sales__ClientID__24B26D99" Association="Self.FK__Sales__ClientID__24B26D99">
       <End Role="Clients" EntitySet="Clients" />
-      <End Role="Reservations" EntitySet="Reservations" />
+      <End Role="Sales" EntitySet="Sales" />
     </AssociationSet>
-    <AssociationSet Name="FK__Computers__Compu__147C05D0" Association="Self.FK__Computers__Compu__147C05D0">
+    <AssociationSet Name="FK__Computers__Compu__1FEDB87C" Association="Self.FK__Computers__Compu__1FEDB87C">
       <End Role="Models" EntitySet="Models" />
       <End Role="Computers" EntitySet="Computers" />
     </AssociationSet>
-    <AssociationSet Name="FK__Reservati__Compu__1A34DF26" Association="Self.FK__Reservati__Compu__1A34DF26">
+    <AssociationSet Name="FK__Sales__ComputerI__25A691D2" Association="Self.FK__Sales__ComputerI__25A691D2">
       <End Role="Computers" EntitySet="Computers" />
-      <End Role="Reservations" EntitySet="Reservations" />
+      <End Role="Sales" EntitySet="Sales" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

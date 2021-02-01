@@ -28,6 +28,6 @@ namespace ProjektZaliczeniowy
         public virtual DbSet<Clients> Clients { get; set; }
         public virtual DbSet<Computers> Computers { get; set; }
         public virtual DbSet<Models> Models { get; set; }
-        public virtual DbSet<Reservations> Reservations { get; set; }
+        public virtual DbSet<Sales> Sales { get; set; }
     }
 }

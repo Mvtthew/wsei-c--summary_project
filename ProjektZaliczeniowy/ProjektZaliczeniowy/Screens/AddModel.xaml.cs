@@ -23,15 +23,6 @@ namespace ProjektZaliczeniowy.Screens
         public AddModel()
         {
             InitializeComponent();
-            fillComputerTypes();
-        }
-
-        private void fillComputerTypes()
-        {
-            computerTypeSelect.Items.Clear();
-
-            computerTypeSelect.Items.Add("P");
-            computerTypeSelect.Items.Add("L");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -39,11 +30,9 @@ namespace ProjektZaliczeniowy.Screens
             var db = new computerEntities();
 
             var modelName = modelNameInput.Text;
-            var modelType = computerTypeSelect.SelectedValue.ToString();
 
             var newModel = new Models() { 
-                ModelName = modelName,
-                ModelType = modelType
+                ModelName = modelName
             };
 
             db.Models.Add(newModel);

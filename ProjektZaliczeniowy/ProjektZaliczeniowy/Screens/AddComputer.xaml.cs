@@ -45,7 +45,7 @@ namespace ProjektZaliczeniowy.Screens
             {
                 var selectedType = computerTypeSelect.SelectedValue.ToString();
                 var db = new computerEntities();
-                var computerModels = db.Models.Where(m => m.ModelType == selectedType).ToList();
+                var computerModels = db.Models.ToList();
                 foreach(var computerModel in computerModels)
                 {
                     computerModelSelect.Items.Add(new { Text = computerModel.ModelName, Value = computerModel.ModelID });
@@ -60,13 +60,17 @@ namespace ProjektZaliczeniowy.Screens
             var computerModelId = int.Parse(computerModelSelect.SelectedValue.ToString());
             var computerType = computerTypeSelect.SelectedValue.ToString();
             var computerPrice = decimal.Parse(computerPriceInput.Text);
+            var computerReservationPrice = decimal.Parse(computerReservationPriceInput.Text);
             var computerName = computerNameInput.Text;
+            var computerAmount = int.Parse(computerAmountInput.Text);
 
             var newComputer = new Computers() {
                 ComputerModelId = computerModelId,
                 ComputerName = computerName,
+                ComputerReservationPrice = computerReservationPrice,
                 ComputerPrice = computerPrice,
-                ComputerType = computerType
+                ComputerType = computerType,
+                ComputerAmount = computerAmount
             };
 
             db.Computers.Add(newComputer);
@@ -77,6 +81,11 @@ namespace ProjektZaliczeniowy.Screens
         private void computerTypeSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             fillComputerModels();
+        }
+
+        private void computerModelSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

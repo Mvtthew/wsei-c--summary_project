@@ -34,7 +34,7 @@ namespace ProjektZaliczeniowy.Screens
 
             var db = new computerEntities();
 
-            var reservations = db.Reservations.Join(db.Clients, ep => ep.ClientID, e => e.ClientID, (ep, e) => new { ep, e }).Join(db.Computers, ep => ep.ep.ComputerID, e => e.ComputerID, (ep, e) => new { ep, e }).Where(r => r.ep.ep.Payed == null).ToList();
+            var reservations = db.Sales.Join(db.Clients, ep => ep.ClientID, e => e.ClientID, (ep, e) => new { ep, e }).Join(db.Computers, ep => ep.ep.ComputerID, e => e.ComputerID, (ep, e) => new { ep, e }).Where(r => r.ep.ep.Payed == null).ToList();
 
             foreach (var reservation in reservations)
             {
@@ -54,7 +54,7 @@ namespace ProjektZaliczeniowy.Screens
 
             var reservationID = int.Parse(reservationSelect.SelectedValue.ToString());
 
-            var reservation = db.Reservations.First(r => r.ReservationID == reservationID);
+            var reservation = db.Sales.First(r => r.ReservationID == reservationID);
 
             reservationPriceInput.Text = reservation.PriceToPay.ToString();
         }
@@ -65,7 +65,7 @@ namespace ProjektZaliczeniowy.Screens
 
             var reservationID = int.Parse(reservationSelect.SelectedValue.ToString());
 
-            var reservation = db.Reservations.First(r => r.ReservationID == reservationID);
+            var reservation = db.Sales.First(r => r.ReservationID == reservationID);
 
             if (reservation != null)
             {

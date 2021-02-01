@@ -66,7 +66,7 @@ namespace ProjektZaliczeniowy.Screens
                 computerSelect.Items.Add(
                     new 
                     { 
-                        Text = $"{computer.ComputerName} [{computer.ComputerType}] ({computer.ComputerPrice} PLN)", 
+                        Text = $"{computer.ComputerName} [{computer.ComputerType}] ({computer.ComputerReservationPrice} PLN / {computer.ComputerPrice} PLN)", 
                         Value = computer.ComputerID 
                     }
                 );
@@ -82,7 +82,8 @@ namespace ProjektZaliczeniowy.Screens
 
             if (computer != null)
             {
-                reservationPriceInput.Text = computer.ComputerPrice.ToString();
+                reservationPriceInput.Text = computer.ComputerReservationPrice.ToString();
+                summaryPriceInput.Text = (computer.ComputerPrice + computer.ComputerReservationPrice).ToString();
             }
         }
 
@@ -90,14 +91,18 @@ namespace ProjektZaliczeniowy.Screens
         {
             var db = new computerEntities();
 
-            var newReservation = new Reservations()
+            var computers = db.Computers.ToList();
+            var computer = computers.First(c => c.ComputerID == int.Parse(computerSelect.SelectedValue.ToString()));
+
+            var newSale = new Sales()
             {
                 ClientID = int.Parse(clientSelect.SelectedValue.ToString()),
                 ComputerID = int.Parse(computerSelect.SelectedValue.ToString()),
-                PriceToPay = decimal.Parse(reservationPriceInput.Text),
+                PriceToPay = decimal.Parse(summaryPriceInput.Text),
             };
 
-            db.Reservations.Add(newReservation);
+            db.Sales.Add(newSale);
+            computer.ComputerAmount--;
 
             db.SaveChanges();
         }

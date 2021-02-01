@@ -20,6 +20,8 @@
           <ScalarProperty Name="ComputerType" ColumnName="ComputerType" />
           <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
           <ScalarProperty Name="ComputerPrice" ColumnName="ComputerPrice" />
+          <ScalarProperty Name="ComputerReservationPrice" ColumnName="ComputerReservationPrice" />
+          <ScalarProperty Name="ComputerAmount" ColumnName="ComputerAmount" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -28,13 +30,12 @@
         <MappingFragment StoreEntitySet="Models">
           <ScalarProperty Name="ModelID" ColumnName="ModelID" />
           <ScalarProperty Name="ModelName" ColumnName="ModelName" />
-          <ScalarProperty Name="ModelType" ColumnName="ModelType" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Reservations">
-      <EntityTypeMapping TypeName="masterModel.Reservations">
-        <MappingFragment StoreEntitySet="Reservations">
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="masterModel.Sales">
+        <MappingFragment StoreEntitySet="Sales">
           <ScalarProperty Name="ReservationID" ColumnName="ReservationID" />
           <ScalarProperty Name="ClientID" ColumnName="ClientID" />
           <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />

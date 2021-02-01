@@ -17,7 +17,7 @@ namespace ProjektZaliczeniowy
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Computers()
         {
-            this.Reservations = new HashSet<Reservations>();
+            this.Sales = new HashSet<Sales>();
         }
     
         public int ComputerID { get; set; }
@@ -25,9 +25,11 @@ namespace ProjektZaliczeniowy
         public string ComputerType { get; set; }
         public string ComputerName { get; set; }
         public decimal ComputerPrice { get; set; }
+        public decimal ComputerReservationPrice { get; set; }
+        public int ComputerAmount { get; set; }
     
         public virtual Models Models { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Reservations> Reservations { get; set; }
+        public virtual ICollection<Sales> Sales { get; set; }
     }
 }

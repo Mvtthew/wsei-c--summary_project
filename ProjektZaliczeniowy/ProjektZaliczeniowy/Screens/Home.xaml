@@ -16,8 +16,8 @@
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2"/>
         <Button Content="DODAJ 🖥" HorizontalAlignment="Left" Margin="163,166,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToComputerAdd" Foreground="White" Grid.Column="1" />
         <TextBlock HorizontalAlignment="Left" Margin="163,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.Column="1"><Run Text="Dodaj"/><Run Text=" do magazynu"/></TextBlock>
-        <Button Content="ZAREZERWUJ 💻👤" HorizontalAlignment="Left" Margin="108,299,0,0" VerticalAlignment="Top" Width="210" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.Column="1" Click="GoToReservationAdd"/>
-        <TextBlock HorizontalAlignment="Left" Margin="108,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zarezerwuj" Grid.Column="1"/>
+        <Button Content="SPRZEDAWAJ 💻👤" HorizontalAlignment="Left" Margin="108,299,0,0" VerticalAlignment="Top" Width="210" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.Column="1" Click="GoToReservationAdd"/>
+        <TextBlock HorizontalAlignment="Left" Margin="108,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Dodaj sprzedaż" Grid.Column="1"/>
         <Button Content="DODAJ 💻" HorizontalAlignment="Left" Margin="163,44,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToModelAdd" Foreground="White" Grid.Column="1" />
         <TextBlock HorizontalAlignment="Left" Margin="163,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.Column="1"><Run Text="Dodaj"/><Run Text=" "/><Run Text="model"/></TextBlock>
         <Button Content="DODAJ 👤" HorizontalAlignment="Left" Margin="163,106,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToClientAdd" Foreground="White" Grid.Column="1" />
@@ -36,6 +36,6 @@
         <Image HorizontalAlignment="Left" Height="4" Margin="102,84,0,0" VerticalAlignment="Top" Width="4" Source="icon.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="102,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="1" Width="4" Background="White" TextAlignment="Center"><Run Background="White" Text="Kosz"/></TextBlock>
         <Button Content="ZAPŁAĆ $€" HorizontalAlignment="Left" Margin="134,299,0,0" VerticalAlignment="Top" Width="111" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Click="GoToReservationPay" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="134,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zapłać za rezerwacje" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="134,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.ColumnSpan="2"><Run Text="Zapłać za "/><Run Text="sprzedaż"/></TextBlock>
     </Grid>
 </Page>

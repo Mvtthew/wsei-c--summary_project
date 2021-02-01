@@ -22,7 +22,6 @@ namespace ProjektZaliczeniowy
     
         public int ModelID { get; set; }
         public string ModelName { get; set; }
-        public string ModelType { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Computers> Computers { get; set; }

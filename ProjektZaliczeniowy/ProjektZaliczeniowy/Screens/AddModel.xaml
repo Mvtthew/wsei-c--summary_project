@@ -13,10 +13,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="23,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Text="Dodaj "/><Run Text="model "/><Run Text="💻👤"/></TextBlock>
         <TextBox x:Name="modelNameInput" HorizontalAlignment="Left" Height="18" Margin="23,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="452"/>
         <TextBlock HorizontalAlignment="Left" Margin="24,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Nazwa "/><Run Text="modelu"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="23,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Typ "/><Run Text="modelu"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <ComboBox x:Name="computerTypeSelect" HorizontalAlignment="Left" Margin="24,139,0,0" VerticalAlignment="Top" Width="451" Height="18"/>
-        <Button Content="Dodaj model" HorizontalAlignment="Left" Margin="24,176,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+        <Button Content="Dodaj model" HorizontalAlignment="Left" Margin="24,148,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
 
     </Grid>
 </Page>

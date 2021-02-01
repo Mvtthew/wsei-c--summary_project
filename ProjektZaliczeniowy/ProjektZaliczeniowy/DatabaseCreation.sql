@@ -8,7 +8,9 @@ CREATE TABLE Computers (
 	ComputerModelId INT NOT NULL FOREIGN KEY REFERENCES Models(ModelID),
 	ComputerType NVARCHAR(1) NOT NULL,
 	ComputerName NVARCHAR(150) NOT NULL,
-	ComputerPrice DECIMAL(18,2) NOT NULL
+	ComputerPrice DECIMAL(18,2) NOT NULL,
+	ComputerReservationPrice DECIMAL(18,2) NOT NULL,
+	ComputerAmount INT NOT NULL
 );
 
 CREATE TABLE Clients (
@@ -19,7 +21,7 @@ CREATE TABLE Clients (
 	ClientGender NVARCHAR(1) NOT NULL
 );
 
-CREATE TABLE Reservations (
+CREATE TABLE Sales (
 	ReservationID INT NOT NULL PRIMARY KEY IDENTITY(0,1),
 	ClientID INT NOT NULL FOREIGN KEY REFERENCES Clients(ClientID),
 	ComputerID INT NOT NULL FOREIGN KEY REFERENCES Computers(ComputerID),
