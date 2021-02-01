@@ -14,8 +14,8 @@
             <ColumnDefinition Width="343*"/>
         </Grid.ColumnDefinitions>
         <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2"/>
-        <Button Content="Laptop 💻" HorizontalAlignment="Left" Margin="21,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35"/>
-        <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="21,243,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="Button_Click"/>
+        <Button Content="Laptop 💻" HorizontalAlignment="Left" Margin="21,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" />
+        <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="21,243,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" />
         <TextBlock HorizontalAlignment="Left" Margin="21,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"><Run Text="Dodaj"/><Run Text=" do magazynu"/></TextBlock>
         <Button Content="Komputer 💻" HorizontalAlignment="Left" Margin="27.5,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" Grid.Column="1"/>
         <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="28,243,0,0" VerticalAlignment="Top" Width="132" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Grid.Column="1"/>

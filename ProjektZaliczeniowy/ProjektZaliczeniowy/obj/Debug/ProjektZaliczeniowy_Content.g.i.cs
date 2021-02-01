@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("screens/icon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("databasecreation.sql")]
 
 

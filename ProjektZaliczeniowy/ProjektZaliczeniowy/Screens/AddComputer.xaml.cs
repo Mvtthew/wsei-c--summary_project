@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ProjektZaliczeniowy
+namespace ProjektZaliczeniowy.Screens
 {
     /// <summary>
-    /// Logika interakcji dla klasy Page1.xaml
+    /// Logika interakcji dla klasy AddComputer.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class AddComputer : Page
     {
-        public Page1()
+        public AddComputer()
         {
             InitializeComponent();
         }

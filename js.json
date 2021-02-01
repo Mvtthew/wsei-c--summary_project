@@ -1,0 +1,29 @@
+{ 
+				"name": "",
+        "shortcut": "",
+        "captain": {
+          "username": "",
+          "name": "",
+          "surname": "",
+         	"email": "",
+          "steamid": ""
+        },
+        "gameID": 0,
+        "players": [
+					{
+						"id": "id",
+						"username": "",
+						"name": "",
+						"surname": "",
+						"email": "",
+						"steamid": ""
+					}
+				],
+        "standin": {
+          "username": "",
+          "name": "",
+          "surname": "",
+          "email": "",
+          "steamid": ""
+        }
+}
