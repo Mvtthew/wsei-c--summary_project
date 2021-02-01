@@ -89,7 +89,21 @@ namespace ProjektZaliczeniowy.Screens
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            errorText.Text = "";
+
             var db = new computerEntities();
+
+            if (clientSelect.SelectedValue == null)
+            {
+                errorText.Text = "Wybierz klienta.";
+                return;
+            }
+
+            if (computerSelect.SelectedValue == null)
+            {
+                errorText.Text = "Wybierz komputer.";
+                return;
+            }
 
             var computers = db.Computers.ToList();
             var computer = computers.First(c => c.ComputerID == int.Parse(computerSelect.SelectedValue.ToString()));
