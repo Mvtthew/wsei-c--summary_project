@@ -31,5 +31,11 @@ namespace ProjektZaliczeniowy
             var addComputer = new AddComputer();
             NavigationService.Navigate(addComputer);
         }
+        
+        private void GoToModelAdd(object sender, RoutedEventArgs e)
+        {
+            var addModel = new AddModel();
+            NavigationService.Navigate(addModel);
+        }
     }
 }

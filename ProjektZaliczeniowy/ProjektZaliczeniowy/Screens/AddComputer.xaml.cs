@@ -70,6 +70,8 @@ namespace ProjektZaliczeniowy.Screens
             };
 
             db.Computers.Add(newComputer);
+
+            db.SaveChanges();
         }
 
         private void computerTypeSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
