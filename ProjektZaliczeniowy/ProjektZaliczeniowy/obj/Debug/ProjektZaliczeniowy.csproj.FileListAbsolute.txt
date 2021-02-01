@@ -20,3 +20,6 @@ C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\bin\Debug\En
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\Home.g.cs
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\Home.baml
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy.csproj.CopyComplete
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\AddComputer.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\ProjektZaliczeniowy_Content.g.cs
+C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\obj\Debug\Screens\AddComputer.baml

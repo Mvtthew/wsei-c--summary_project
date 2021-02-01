@@ -9,6 +9,17 @@
       Title="AddComputer">
 
     <Grid>
-        
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500"/>
+        <TextBlock HorizontalAlignment="Left" Margin="23,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Text="Dodaj komputer"/><Run Text=" 🖥"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="23,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="452"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,83,0,0" TextWrapping="Wrap" Text="Nazwa komputera" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="23,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Typ "/><Run Text="komputera"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Model"/><Run Text=" komputera"/></TextBlock>
+        <ComboBox HorizontalAlignment="Left" Margin="24,179,0,0" VerticalAlignment="Top" Width="451" Height="18"/>
+        <ComboBox HorizontalAlignment="Left" Margin="24,139,0,0" VerticalAlignment="Top" Width="451" Height="18"/>
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="23,219,0,0" TextWrapping="Wrap" Text="0,00" VerticalAlignment="Top" Width="452" />
+        <TextBlock HorizontalAlignment="Left" Margin="24,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Cena "/><Run Text="komputera"/></TextBlock>
+        <Button Content="Dodaj komputer" HorizontalAlignment="Left" Margin="23,267,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+
     </Grid>
 </Page>

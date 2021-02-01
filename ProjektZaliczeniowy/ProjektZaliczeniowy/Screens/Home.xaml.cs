@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjektZaliczeniowy.Screens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace ProjektZaliczeniowy
         public Page1()
         {
             InitializeComponent();
+        }
+
+        private void GoToComputerAdd(object sender, RoutedEventArgs e)
+        {
+            var addComputer = new AddComputer();
+            NavigationService.Navigate(addComputer);
         }
     }
 }

@@ -14,15 +14,12 @@
             <ColumnDefinition Width="343*"/>
         </Grid.ColumnDefinitions>
         <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2"/>
-        <Button Content="Laptop 💻" HorizontalAlignment="Left" Margin="21,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" />
-        <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="21,243,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" />
-        <TextBlock HorizontalAlignment="Left" Margin="21,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"><Run Text="Dodaj"/><Run Text=" do magazynu"/></TextBlock>
-        <Button Content="Komputer 💻" HorizontalAlignment="Left" Margin="27.5,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" Grid.Column="1"/>
-        <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="28,243,0,0" VerticalAlignment="Top" Width="132" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="28,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Sprzedaj" Grid.Column="1"/>
-        <Button Content="Komputer 💻" HorizontalAlignment="Left" Margin="187.5,285,0,0" VerticalAlignment="Top" Width="133" Background="#FF686D76" FontSize="18" Height="35" Grid.Column="1"/>
-        <Button Content="Komputer 🖥" HorizontalAlignment="Left" Margin="188,243,0,0" VerticalAlignment="Top" Width="132" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="188,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zarezerwuj" Grid.Column="1"/>
+        <Button Content="DODAJ 🖥" HorizontalAlignment="Left" Margin="9,184,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToComputerAdd" Foreground="White" Grid.ColumnSpan="2" />
+        <TextBlock HorizontalAlignment="Left" Margin="9,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"><Run Text="Dodaj"/><Run Text=" do magazynu"/></TextBlock>
+        <Button Content="SPRZEDAJ 🖥" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Width="150" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Sprzedaj"/>
+        <Button Content="ZAREZERWUJ 🖥" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Width="150" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zarezerwuj"/>
         <Image HorizontalAlignment="Left" Height="130" Margin="21,17,0,0" VerticalAlignment="Top" Width="130" Source="icon.png"/>
     </Grid>
 </Page>
