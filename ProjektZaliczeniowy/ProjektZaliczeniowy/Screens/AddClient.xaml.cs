@@ -37,7 +37,30 @@ namespace ProjektZaliczeniowy.Screens
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            errorText.Text = "";
+
             var db = new computerEntities();
+
+            if (clientNameInput.Text == "")
+            {
+                errorText.Text = "Podaj imię i nazwisko.";
+                return;
+            }
+            if (clientEmailInput.Text == "")
+            {
+                errorText.Text = "Podaj e-mail.";
+                return;
+            }
+            if (clientPhoneInput.Text == "")
+            {
+                errorText.Text = "Podaj numer telefonu.";
+                return;
+            }
+            if (clientGenderSelect.SelectedItem == null)
+            {
+                errorText.Text = "Wybierz płeć.";
+                return;
+            }
 
             var clientName = clientNameInput.Text;
             var clientEmail = clientEmailInput.Text;
@@ -55,6 +78,7 @@ namespace ProjektZaliczeniowy.Screens
             db.Clients.Add(newClient);
 
             db.SaveChanges();
+
         }
     }
 }

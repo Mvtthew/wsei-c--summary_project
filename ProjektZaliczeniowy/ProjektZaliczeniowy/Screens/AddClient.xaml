@@ -20,6 +20,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="24,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Nr telefonu klienta"/>
         <Button Content="Dodaj klienta" HorizontalAlignment="Left" Margin="23,267,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
         <TextBox x:Name="clientEmailInput" HorizontalAlignment="Left" Height="18" Margin="24,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="452"/>
+        <TextBlock x:Name="errorText" HorizontalAlignment="Left" Margin="194,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" Foreground="Red"/>
 
     </Grid>
 </Page>
