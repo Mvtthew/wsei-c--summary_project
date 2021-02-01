@@ -27,6 +27,13 @@ namespace ProjektZaliczeniowy.Screens
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            errorText.Text = "";
+            if (modelNameInput.Text == "")
+            {
+                errorText.Text = "Podaj nazwę modelu.";
+                return;
+            }
+
             var db = new computerEntities();
 
             var modelName = modelNameInput.Text;

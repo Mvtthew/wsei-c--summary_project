@@ -15,6 +15,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="24,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Nazwa "/><Run Text="modelu"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button Content="Dodaj model" HorizontalAlignment="Left" Margin="24,148,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+        <TextBlock x:Name="errorText" HorizontalAlignment="Left" Margin="193,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" Foreground="Red"/>
 
     </Grid>
 </Page>
