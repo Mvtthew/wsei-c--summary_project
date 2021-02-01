@@ -37,5 +37,11 @@ namespace ProjektZaliczeniowy
             var addModel = new AddModel();
             NavigationService.Navigate(addModel);
         }
+        
+        private void GoToClientAdd(object sender, RoutedEventArgs e)
+        {
+            var addClient = new AddClient();
+            NavigationService.Navigate(addClient);
+        }
     }
 }

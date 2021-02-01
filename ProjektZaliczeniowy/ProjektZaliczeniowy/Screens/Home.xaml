@@ -16,12 +16,12 @@
         <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2"/>
         <Button Content="DODAJ 🖥" HorizontalAlignment="Left" Margin="9,184,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToComputerAdd" Foreground="White" Grid.ColumnSpan="2" />
         <TextBlock HorizontalAlignment="Left" Margin="9,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"><Run Text="Dodaj"/><Run Text=" do magazynu"/></TextBlock>
-        <Button Content="SPRZEDAJ 🖥" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Width="150" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Sprzedaj"/>
-        <Button Content="ZAREZERWUJ 🖥" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Width="150" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zarezerwuj"/>
+        <Button Content="ZAREZERWUJ 🖥" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" Width="150" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zarezerwuj"/>
         <Image HorizontalAlignment="Left" Height="130" Margin="21,17,0,0" VerticalAlignment="Top" Width="130" Source="icon.png"/>
-        <Button Content="DODAJ 💻👤" HorizontalAlignment="Left" Margin="163,44,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToModelAdd" Foreground="White" Grid.Column="1" />
+        <Button Content="DODAJ 💻" HorizontalAlignment="Left" Margin="163,44,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToModelAdd" Foreground="White" Grid.Column="1" />
         <TextBlock HorizontalAlignment="Left" Margin="163,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.Column="1"><Run Text="Dodaj"/><Run Text=" "/><Run Text="model"/></TextBlock>
+        <Button Content="DODAJ 👤" HorizontalAlignment="Left" Margin="163,106,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToClientAdd" Foreground="White" Grid.Column="1" />
+        <TextBlock HorizontalAlignment="Left" Margin="163,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.Column="1"><Run Text="Dodaj"/><Run Text=" "/><Run Text="klienta"/></TextBlock>
     </Grid>
 </Page>
