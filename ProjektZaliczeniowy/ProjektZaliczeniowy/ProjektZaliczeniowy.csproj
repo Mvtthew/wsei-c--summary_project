@@ -97,6 +97,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Screens\AddReservation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Screens\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +136,9 @@
     </Compile>
     <Compile Include="Screens\AddModel.xaml.cs">
       <DependentUpon>AddModel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\AddReservation.xaml.cs">
+      <DependentUpon>AddReservation.xaml</DependentUpon>
     </Compile>
     <Compile Include="Screens\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
@@ -177,6 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DatabaseCreation.sql" />
+    <Resource Include="logo❤.jpg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

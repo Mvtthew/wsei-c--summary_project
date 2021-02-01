@@ -13,15 +13,27 @@
             <ColumnDefinition Width="158*"/>
             <ColumnDefinition Width="343*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2"/>
-        <Button Content="DODAJ 🖥" HorizontalAlignment="Left" Margin="9,184,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToComputerAdd" Foreground="White" Grid.ColumnSpan="2" />
-        <TextBlock HorizontalAlignment="Left" Margin="9,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"><Run Text="Dodaj"/><Run Text=" do magazynu"/></TextBlock>
-        <Button Content="ZAREZERWUJ 🖥" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" Width="150" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zarezerwuj"/>
-        <Image HorizontalAlignment="Left" Height="130" Margin="21,17,0,0" VerticalAlignment="Top" Width="130" Source="icon.png"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2"/>
+        <Button Content="DODAJ 🖥" HorizontalAlignment="Left" Margin="163,166,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToComputerAdd" Foreground="White" Grid.Column="1" />
+        <TextBlock HorizontalAlignment="Left" Margin="163,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.Column="1"><Run Text="Dodaj"/><Run Text=" do magazynu"/></TextBlock>
+        <Button Content="ZAREZERWUJ 💻👤" HorizontalAlignment="Left" Margin="108,299,0,0" VerticalAlignment="Top" Width="210" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Foreground="White" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="108,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Zarezerwuj" Grid.Column="1"/>
         <Button Content="DODAJ 💻" HorizontalAlignment="Left" Margin="163,44,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToModelAdd" Foreground="White" Grid.Column="1" />
         <TextBlock HorizontalAlignment="Left" Margin="163,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.Column="1"><Run Text="Dodaj"/><Run Text=" "/><Run Text="model"/></TextBlock>
         <Button Content="DODAJ 👤" HorizontalAlignment="Left" Margin="163,106,0,0" VerticalAlignment="Top" Width="151" Background="#FF686D76" FontSize="18" Height="35" IsCancel="True" Click="GoToClientAdd" Foreground="White" Grid.Column="1" />
         <TextBlock HorizontalAlignment="Left" Margin="163,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Grid.Column="1"><Run Text="Dodaj"/><Run Text=" "/><Run Text="klienta"/></TextBlock>
+        <Image Grid.ColumnSpan="2" Margin="10,10,312,162" Source="/ProjektZaliczeniowy;component/logo❤.jpg" Stretch="Fill"/>
+        <Label Content="PC.SHOP" HorizontalAlignment="Left" Margin="32,125,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF06254D" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="23.239"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="12.882"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="4" Margin="102,84,0,0" VerticalAlignment="Top" Width="4" Source="icon.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="102,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="1" Width="4" Background="White" TextAlignment="Center"><Run Background="White" Text="Kosz"/></TextBlock>
     </Grid>
 </Page>

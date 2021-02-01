@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Mateusz\Desktop\c#\ProjektZaliczeniowy\ProjektZaliczeniowy\App.xaml
-51272461844
+6524372688
 3-938782067
-171196179750
+18-623473310
 18728957314
-MainWindow.xaml;Screens\AddClient.xaml;Screens\AddComputer.xaml;Screens\AddModel.xaml;Screens\Home.xaml;
+MainWindow.xaml;Screens\AddClient.xaml;Screens\AddComputer.xaml;Screens\AddModel.xaml;Screens\AddReservation.xaml;Screens\Home.xaml;
 
 True
 

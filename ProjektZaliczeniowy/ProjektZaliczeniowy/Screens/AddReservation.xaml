@@ -1,0 +1,23 @@
+﻿<Page x:Class="ProjektZaliczeniowy.Screens.AddReservation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektZaliczeniowy.Screens"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="AddReservation">
+
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="350" Stroke="Black" VerticalAlignment="Top" Width="500"/>
+        <TextBlock HorizontalAlignment="Left" Margin="23,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Text="Dodaj "/><Run Text="rezerwacje"/><Run Text=" "/><Run Text="💻👤"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="23,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Klient"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="computerTypeSelect" HorizontalAlignment="Left" Margin="24,85,0,0" VerticalAlignment="Top" Width="451" Height="18"/>
+        <Button Content="Dodaj rezerwacje" HorizontalAlignment="Left" Margin="23,200,0,0" VerticalAlignment="Top" Width="159" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="23,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Komputer"/>
+        <ComboBox x:Name="computerTypeSelect_Copy" HorizontalAlignment="Left" Margin="24,123,0,0" VerticalAlignment="Top" Width="451" Height="18"/>
+        <TextBox x:Name="reservationPriceInput" HorizontalAlignment="Left" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="451"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Cena rezerwacji"/>
+    </Grid>
+</Page>
